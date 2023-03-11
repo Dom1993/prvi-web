@@ -36,7 +36,7 @@ Dohvaćeni id: @Id
 
     public void Natrag()
     {
-        navManager.NavigateTo("/osobe");
+        navManager.NavigateTo("osobe");
 
     }
 
@@ -46,7 +46,7 @@ Dohvaćeni id: @Id
         .DeleteAsync($"https://expertvjezbeapi.azurewebsites.net/api/Osobes/{Id}");
         if (result.IsSuccessStatusCode)
         {
-             navManager.NavigateTo("/osobe");
+             navManager.NavigateTo("osobe");
         }
         else
         {
